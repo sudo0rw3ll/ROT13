@@ -15,6 +15,6 @@ This application has two work modes:
 <p>TODO</p>
 <ul>
   <li>Add combo box for shift selection</li>
-  <li>Implement brute-force option&#10003;</li>
+  <li>Implement brute-force option &#9989;</li>
   <li>Redesign GUI</li>
 </ul>
