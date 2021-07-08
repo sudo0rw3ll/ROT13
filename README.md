@@ -10,4 +10,6 @@ This application has two work modes:
   <li>Select text file</li>
   <p>User selects file from his computer and then does <b>encryption/decryption</b></p>
 </ul>
+
+<p>Conversion is based on the type of input data, if it's already encrypted using ROT13 then it's going to decrypt data and vice versa</p>
   I'm going to add combo box with different shifts for ROT, and hopefully <b>redesign</b> GUI
