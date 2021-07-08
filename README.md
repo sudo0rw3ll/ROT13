@@ -12,4 +12,9 @@ This application has two work modes:
 </ul>
 
 <p>Conversion is based on the type of input data, if it's already encrypted using ROT13 then it's going to decrypt data and vice versa</p>
-<p>I'm going to add combo box with different shifts for ROT, brute-force method of decryption, and hopefully <b>redesign</b> GUI</p>
+<p>TODO</p>
+<ul>
+  <li>Add combo box for shift selection</li>
+  <li>Implement brute-force option&#10003;</li>
+  <li>Redesign GUI</li>
+</ul>
