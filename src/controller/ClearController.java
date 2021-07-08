@@ -11,6 +11,8 @@ public class ClearController implements EventHandler<ActionEvent>{
 		MainStage.getInstance().getTaInput().clear();
 		MainStage.getInstance().getTaOutput().clear();
 		MainStage.getInstance().getLblPath().setText("Putanja do fajla:");
+		MainStage.getInstance().getLblPath().setVisible(false);
+		MainStage.getInstance().getRbText().setSelected(true);
 	}
 
 }

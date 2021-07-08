@@ -19,6 +19,7 @@ public class IzaberiFajlController implements EventHandler<ActionEvent>{
 		File fajl = fileChooser.showOpenDialog(MainStage.getInstance());
 		
 		if(fajl != null) {
+			MainStage.getInstance().getLblPath().setVisible(true);
 			MainStage.getInstance().getLblPath().setText("Putanja do fajla:" + fajl.getAbsolutePath());
 			readFile(fajl);
 		}
