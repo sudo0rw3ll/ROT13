@@ -2,6 +2,7 @@ package controller;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -19,7 +20,7 @@ public class ROT13Controller implements EventHandler<ActionEvent>{
 		
 		if(!MainStage.getInstance().getBtnFajl().isDisable()) {
 			String pathParts[] = MainStage.getInstance().getLblPath().getText().split(":");
-			
+				
 			File file = new File(pathParts[1]);
 
 			MainStage.getInstance().getTaOutput().setText(file.getAbsolutePath());

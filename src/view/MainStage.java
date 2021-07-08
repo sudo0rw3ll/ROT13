@@ -1,5 +1,6 @@
 package view;
 
+import controller.BruteForceController;
 import controller.ClearController;
 import controller.IzaberiFajlController;
 import controller.ROT13Controller;
@@ -32,7 +33,9 @@ public class MainStage extends Stage{
 	private Button btnFajl = new Button("Izaberi fajl");
 	
 	private HBox midBox = new HBox(10);
+	private HBox botBox = new HBox(10);
 	private TextArea taInput = new TextArea();
+	private Button btnBrute = new Button("Brute force");
 	private TextArea taOutput = new TextArea();
 	private Label lblPath = new Label("Putanja do fajla: ");
 	private Button btnRot = new Button("ROT13");
@@ -48,6 +51,7 @@ public class MainStage extends Stage{
 		btnFajl.setOnAction(new IzaberiFajlController());
 		btnRot.setOnAction(new ROT13Controller());
 		btnClear.setOnAction(new ClearController());
+		btnBrute.setOnAction(new BruteForceController());
 	}
 	
 	private void init() {
@@ -80,6 +84,9 @@ public class MainStage extends Stage{
 		midBox.setSpacing(10);
 		midBox.setAlignment(Pos.CENTER);
 		
+		botBox.setPadding(new Insets(10));
+		botBox.setAlignment(Pos.CENTER);
+		
 		root.setPadding(new Insets(10));
 		root.setAlignment(Pos.CENTER);
 		
@@ -98,10 +105,13 @@ public class MainStage extends Stage{
 		taOutput.setPrefWidth(300);
 		midBox.getChildren().addAll(taInput,new Label("->"),taOutput);
 		
+		botBox.getChildren().add(btnBrute);
+		botBox.getChildren().add(btnRot);
+		
 		root.getChildren().add(topHb);
 		root.getChildren().add(lblPath);
 		root.getChildren().add(midBox);
-		root.getChildren().add(btnRot);
+		root.getChildren().add(botBox);
 		root.getChildren().add(btnClear);
 	}
 	
