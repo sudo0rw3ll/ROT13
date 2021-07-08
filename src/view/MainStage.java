@@ -63,11 +63,9 @@ public class MainStage extends Stage{
 				if(tgIzbor.getSelectedToggle() != null) {
 					if(tgIzbor.getSelectedToggle().getUserData().toString().equalsIgnoreCase("fajl")) {
 						btnFajl.setDisable(false);
-						lblPath.setDisable(false);
-						
 					}else {
 						btnFajl.setDisable(true);
-						lblPath.setDisable(true);
+						lblPath.setVisible(false);
 					}
 				}
 			}
@@ -146,4 +144,11 @@ public class MainStage extends Stage{
 		this.btnFajl = btnFajl;
 	}
 
+	public RadioButton getRbText() {
+		return rbText;
+	}
+
+	public void setRbText(RadioButton rbText) {
+		this.rbText = rbText;
+	}
 }
