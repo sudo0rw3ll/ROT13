@@ -23,6 +23,14 @@ public class BruteForceController implements EventHandler<ActionEvent>{
 			return;
 		}
 		
+		String out = "";
+		
+		out = bruteForce(lines);
+		
+		bw.getTaOutput().setText(out);
+	}
+	
+	private String bruteForce(String lines[]) {
 		char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
 		
 		String out = "";
@@ -48,8 +56,7 @@ public class BruteForceController implements EventHandler<ActionEvent>{
 				out += "\n";
 			}
 		}
-		
-		bw.getTaOutput().setText(out);
+		return out;
 	}
 	
 	private int getIndex(char ch, char alphabet[]) {
