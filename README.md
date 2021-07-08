@@ -3,4 +3,9 @@
 <br></br>
 I've used JavaFX to create GUI.
 <br></br>
-I'm going to add combo box with different shifts for ROT, and hopefully <b>redesign</b> GUI
+This application has two work modes:
+<ul>
+  <li>Input text</li>
+  <li>Select text file</li>
+</ul>
+  I'm going to add combo box with different shifts for ROT, and hopefully <b>redesign</b> GUI
